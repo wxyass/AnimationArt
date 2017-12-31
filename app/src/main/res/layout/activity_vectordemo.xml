@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.wxyass.animationart.VectorDemo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="another"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="打开新Activity"
+            />
+
+        <!--为控件设置 设置背景图-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_android_black_24dp"/>
+
+        <!--为控件设置  点击切换背景图-->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_btn"/>
+
+        <!--为控件设置 平移动画-->
+        <ImageView
+            android:onClick="anima"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat = "@drawable/arrow_anim"
+            />
+
+        <!--为控件设置  颜色渐变动画-->
+        <ImageView
+            android:onClick="square"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat = "@drawable/square_anim"/>
+
+        <!--路径绘制的动画 一重动画-->
+        <ImageView
+            android:onClick="searchbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat = "@drawable/searchbar_anim"/>
+
+        <!--路径绘制的动画 多重动画-->
+        <ImageView
+            android:onClick="path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat = "@drawable/path_anim"/>
+
+    </LinearLayout>
+</ScrollView>
